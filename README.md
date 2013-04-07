@@ -14,8 +14,8 @@ Linux driver for tplink-wn725n nano wireless adapter.
 	- `make modules_prepare`
 	- `cp /path/to/rpi-firmware/extra/Module.symvers .`
 	- `cd /path/to/rtl-8188eu`
-	- `CONFIG_RTL8188EU=m make -C /path/to/rpi-linux M=\`pwd\``
-4. copy 8188eu.ko to /lib/modules/\`uname -r\`/kernel/driver/net/wireless
+	- ``CONFIG_RTL8188EU=m make -C /path/to/rpi-linux M=`pwd```
+4. copy 8188eu.ko to /lib/modules/`uname -r`/kernel/driver/net/wireless
 5. depmod -a
 6. modprobe 8188eu
 7. ifconfig and you can see the wlan interface :-)
